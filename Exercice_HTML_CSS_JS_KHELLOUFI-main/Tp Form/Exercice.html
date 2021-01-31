@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <form action="" method="GET" onsubmit="valider()">
+            <label for="name">Nom</label>
+            <input type="text" id="name" ><span>(*)</span><br>
+            <label for="password">Password</label>
+            <input type="password" id="password"><br>
+            <label>Afficher Div</label>
+            <input type="radio" id="oui" name="grp1" value="oui" onchange="Afficher_div()" ><label for="oui" >oui</label>
+            <input type="radio" id="non" name="grp1" value="non" onchange="Afficher_div()"><label for="non" >non</label>
+            <div id="d1" style="background-color: red; width:300px;">
+                <label>Choisir une ville</label>
+                <select name="villes" id="villes">
+                    <option value="select" id="v1">--Selectionner ville--</option>
+                    <option value="Rabat" id="v2">Rabat</option>
+                    <option value="Casablanca" id="v3">Casablanca</option>
+                    <option value="Beni Mellal" id="v4">Beni Mellal</option>
+                    <option value="Marrakesh" id="v5">Marrakesh</option>
+                    <option value="Oujda" id="v6">Oujda</option>
+                    
+                </select>
+            </div><br>
+            <input type="submit" value="se connecter">
+            <input type="reset" value="Effaces">
+        </form>
+        <div id="msg"></div>
+    </div>
+</body>
+</html>
